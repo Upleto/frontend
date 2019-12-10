@@ -1,27 +1,27 @@
 self.__precacheManifest = [
   {
-    "url": "/frontend/_next/static/RRLyD4CGEEpXPIdIl9dDQ/pages/_app.js",
-    "revision": "a5f9730c8cb9f11cfcf5"
+    "url": "/frontend/_next/static/chunks/commons.4343936bd4f72d4b7bed.js",
+    "revision": "8d8df71a81aa392a6195"
   },
   {
-    "url": "/frontend/_next/static/RRLyD4CGEEpXPIdIl9dDQ/pages/_error.js",
-    "revision": "1c820deabe7c312a0d15"
+    "url": "/frontend/_next/static/icsbkge37VWu6QoKiVCRq/pages/_app.js",
+    "revision": "3c0076633b002805ef81"
   },
   {
-    "url": "/frontend/_next/static/RRLyD4CGEEpXPIdIl9dDQ/pages/index.js",
-    "revision": "99cb31dcae66eb63a50a"
+    "url": "/frontend/_next/static/icsbkge37VWu6QoKiVCRq/pages/_error.js",
+    "revision": "10b1c688f04acddb42ca"
   },
   {
-    "url": "/frontend/_next/static/RRLyD4CGEEpXPIdIl9dDQ/pages/page1.js",
-    "revision": "f01c132870322f684cc1"
+    "url": "/frontend/_next/static/icsbkge37VWu6QoKiVCRq/pages/index.js",
+    "revision": "8ccd00a57de509488bbf"
   },
   {
-    "url": "/frontend/_next/static/RRLyD4CGEEpXPIdIl9dDQ/pages/page2.js",
-    "revision": "60d86bb844484b20e3ba"
+    "url": "/frontend/_next/static/icsbkge37VWu6QoKiVCRq/pages/page1.js",
+    "revision": "e68356dc8881c77d5541"
   },
   {
-    "url": "/frontend/_next/static/chunks/commons.7238cab53b0a2f71dd4c.js",
-    "revision": "df5f0234dfc285f7e1f3"
+    "url": "/frontend/_next/static/icsbkge37VWu6QoKiVCRq/pages/page2.js",
+    "revision": "dd5c3c04f6915649c926"
   },
   {
     "url": "/frontend/_next/static/runtime/main-5ffb87fdeca77a49c41f.js",

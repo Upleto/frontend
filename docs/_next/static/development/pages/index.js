@@ -88,6 +88,17 @@ module.exports = __webpack_require__(/*! core-js/library/fn/object/define-proper
 
 /***/ }),
 
+/***/ "./node_modules/@babel/runtime-corejs2/core-js/object/entries.js":
+/*!***********************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/core-js/object/entries.js ***!
+  \***********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! core-js/library/fn/object/entries */ "./node_modules/core-js/library/fn/object/entries.js");
+
+/***/ }),
+
 /***/ "./node_modules/@babel/runtime-corejs2/core-js/object/get-own-property-descriptor.js":
 /*!*******************************************************************************************!*\
   !*** ./node_modules/@babel/runtime-corejs2/core-js/object/get-own-property-descriptor.js ***!
@@ -360,6 +371,25 @@ module.exports = _createClass;
 
 /***/ }),
 
+/***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/arrayWithHoles.js":
+/*!***************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/arrayWithHoles.js ***!
+  \***************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _arrayWithHoles; });
+/* harmony import */ var _core_js_array_is_array__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core-js/array/is-array */ "./node_modules/@babel/runtime-corejs2/core-js/array/is-array.js");
+/* harmony import */ var _core_js_array_is_array__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_core_js_array_is_array__WEBPACK_IMPORTED_MODULE_0__);
+
+function _arrayWithHoles(arr) {
+  if (_core_js_array_is_array__WEBPACK_IMPORTED_MODULE_0___default()(arr)) return arr;
+}
+
+/***/ }),
+
 /***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/extends.js":
 /*!********************************************************************!*\
   !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/extends.js ***!
@@ -389,6 +419,70 @@ function _extends() {
   };
 
   return _extends.apply(this, arguments);
+}
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/iterableToArrayLimit.js":
+/*!*********************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/iterableToArrayLimit.js ***!
+  \*********************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _iterableToArrayLimit; });
+/* harmony import */ var _core_js_get_iterator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core-js/get-iterator */ "./node_modules/@babel/runtime-corejs2/core-js/get-iterator.js");
+/* harmony import */ var _core_js_get_iterator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_core_js_get_iterator__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _core_js_is_iterable__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../core-js/is-iterable */ "./node_modules/@babel/runtime-corejs2/core-js/is-iterable.js");
+/* harmony import */ var _core_js_is_iterable__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_core_js_is_iterable__WEBPACK_IMPORTED_MODULE_1__);
+
+
+function _iterableToArrayLimit(arr, i) {
+  if (!(_core_js_is_iterable__WEBPACK_IMPORTED_MODULE_1___default()(Object(arr)) || Object.prototype.toString.call(arr) === "[object Arguments]")) {
+    return;
+  }
+
+  var _arr = [];
+  var _n = true;
+  var _d = false;
+  var _e = undefined;
+
+  try {
+    for (var _i = _core_js_get_iterator__WEBPACK_IMPORTED_MODULE_0___default()(arr), _s; !(_n = (_s = _i.next()).done); _n = true) {
+      _arr.push(_s.value);
+
+      if (i && _arr.length === i) break;
+    }
+  } catch (err) {
+    _d = true;
+    _e = err;
+  } finally {
+    try {
+      if (!_n && _i["return"] != null) _i["return"]();
+    } finally {
+      if (_d) throw _e;
+    }
+  }
+
+  return _arr;
+}
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/nonIterableRest.js":
+/*!****************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/nonIterableRest.js ***!
+  \****************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _nonIterableRest; });
+function _nonIterableRest() {
+  throw new TypeError("Invalid attempt to destructure non-iterable instance");
 }
 
 /***/ }),
@@ -457,6 +551,28 @@ function _objectWithoutPropertiesLoose(source, excluded) {
   }
 
   return target;
+}
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/slicedToArray.js":
+/*!**************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/slicedToArray.js ***!
+  \**************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _slicedToArray; });
+/* harmony import */ var _arrayWithHoles__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./arrayWithHoles */ "./node_modules/@babel/runtime-corejs2/helpers/esm/arrayWithHoles.js");
+/* harmony import */ var _iterableToArrayLimit__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./iterableToArrayLimit */ "./node_modules/@babel/runtime-corejs2/helpers/esm/iterableToArrayLimit.js");
+/* harmony import */ var _nonIterableRest__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./nonIterableRest */ "./node_modules/@babel/runtime-corejs2/helpers/esm/nonIterableRest.js");
+
+
+
+function _slicedToArray(arr, i) {
+  return Object(_arrayWithHoles__WEBPACK_IMPORTED_MODULE_0__["default"])(arr) || Object(_iterableToArrayLimit__WEBPACK_IMPORTED_MODULE_1__["default"])(arr, i) || Object(_nonIterableRest__WEBPACK_IMPORTED_MODULE_2__["default"])();
 }
 
 /***/ }),
@@ -2986,6 +3102,19 @@ module.exports = function defineProperty(it, key, desc) {
 
 /***/ }),
 
+/***/ "./node_modules/core-js/library/fn/object/entries.js":
+/*!***********************************************************!*\
+  !*** ./node_modules/core-js/library/fn/object/entries.js ***!
+  \***********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(/*! ../../modules/es7.object.entries */ "./node_modules/core-js/library/modules/es7.object.entries.js");
+module.exports = __webpack_require__(/*! ../../modules/_core */ "./node_modules/core-js/library/modules/_core.js").Object.entries;
+
+
+/***/ }),
+
 /***/ "./node_modules/core-js/library/fn/object/get-own-property-descriptor.js":
 /*!*******************************************************************************!*\
   !*** ./node_modules/core-js/library/fn/object/get-own-property-descriptor.js ***!
@@ -4961,6 +5090,38 @@ module.exports = function (KEY, exec) {
 
 /***/ }),
 
+/***/ "./node_modules/core-js/library/modules/_object-to-array.js":
+/*!******************************************************************!*\
+  !*** ./node_modules/core-js/library/modules/_object-to-array.js ***!
+  \******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var DESCRIPTORS = __webpack_require__(/*! ./_descriptors */ "./node_modules/core-js/library/modules/_descriptors.js");
+var getKeys = __webpack_require__(/*! ./_object-keys */ "./node_modules/core-js/library/modules/_object-keys.js");
+var toIObject = __webpack_require__(/*! ./_to-iobject */ "./node_modules/core-js/library/modules/_to-iobject.js");
+var isEnum = __webpack_require__(/*! ./_object-pie */ "./node_modules/core-js/library/modules/_object-pie.js").f;
+module.exports = function (isEntries) {
+  return function (it) {
+    var O = toIObject(it);
+    var keys = getKeys(O);
+    var length = keys.length;
+    var i = 0;
+    var result = [];
+    var key;
+    while (length > i) {
+      key = keys[i++];
+      if (!DESCRIPTORS || isEnum.call(O, key)) {
+        result.push(isEntries ? [key, O[key]] : O[key]);
+      }
+    }
+    return result;
+  };
+};
+
+
+/***/ }),
+
 /***/ "./node_modules/core-js/library/modules/_perform.js":
 /*!**********************************************************!*\
   !*** ./node_modules/core-js/library/modules/_perform.js ***!
@@ -6691,6 +6852,26 @@ __webpack_require__(/*! ./_set-collection-of */ "./node_modules/core-js/library/
 var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/library/modules/_export.js");
 
 $export($export.P + $export.R, 'Map', { toJSON: __webpack_require__(/*! ./_collection-to-json */ "./node_modules/core-js/library/modules/_collection-to-json.js")('Map') });
+
+
+/***/ }),
+
+/***/ "./node_modules/core-js/library/modules/es7.object.entries.js":
+/*!********************************************************************!*\
+  !*** ./node_modules/core-js/library/modules/es7.object.entries.js ***!
+  \********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// https://github.com/tc39/proposal-object-values-entries
+var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/library/modules/_export.js");
+var $entries = __webpack_require__(/*! ./_object-to-array */ "./node_modules/core-js/library/modules/_object-to-array.js")(true);
+
+$export($export.S, 'Object', {
+  entries: function entries(it) {
+    return $entries(it);
+  }
+});
 
 
 /***/ }),
@@ -11332,14 +11513,21 @@ var Page = function Page() {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/head */ "./node_modules/next/dist/next-server/lib/head.js");
-/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _Link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../Link */ "./src/components/Link/index.tsx");
-/* harmony import */ var _emotion_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @emotion/core */ "./node_modules/@emotion/core/dist/core.browser.esm.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/slicedToArray */ "./node_modules/@babel/runtime-corejs2/helpers/esm/slicedToArray.js");
+/* harmony import */ var _babel_runtime_corejs2_core_js_object_entries__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/entries */ "./node_modules/@babel/runtime-corejs2/core-js/object/entries.js");
+/* harmony import */ var _babel_runtime_corejs2_core_js_object_entries__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_object_entries__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! next/head */ "./node_modules/next/dist/next-server/lib/head.js");
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _Link__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../Link */ "./src/components/Link/index.tsx");
+/* harmony import */ var _utils_common_prefixLink__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../utils/common/prefixLink */ "./src/utils/common/prefixLink.tsx");
+/* harmony import */ var _emotion_core__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @emotion/core */ "./node_modules/@emotion/core/dist/core.browser.esm.js");
+
+
 var _jsxFileName = "/Users/david.chen/Documents/projects/frontend/src/components/Head/ManifestHead.tsx";
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+var __jsx = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement;
+
 
 
 
@@ -11364,185 +11552,173 @@ var Head = function Head(_ref) {
       appleIconSize = _ref$appleIconSize === void 0 ? '192x192' : _ref$appleIconSize,
       isAmp = _ref.isAmp,
       children = _ref.children;
-  return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])(next_head__WEBPACK_IMPORTED_MODULE_1___default.a, {
+  var linkToAdd = {};
+
+  if (hrefManifest) {
+    linkToAdd.manifest = Object(_utils_common_prefixLink__WEBPACK_IMPORTED_MODULE_5__["default"])(hrefManifest);
+  }
+
+  if (!isAmp && hrefCanonical) {
+    linkToAdd.canonical = Object(_utils_common_prefixLink__WEBPACK_IMPORTED_MODULE_5__["default"])(hrefCanonical);
+  }
+
+  if (favIconPath) {
+    linkToAdd['shortcut icon'] = Object(_utils_common_prefixLink__WEBPACK_IMPORTED_MODULE_5__["default"])(favIconPath);
+  }
+
+  Object(react__WEBPACK_IMPORTED_MODULE_2__["useEffect"])(function () {
+    var linkTags = _babel_runtime_corejs2_core_js_object_entries__WEBPACK_IMPORTED_MODULE_1___default()(linkToAdd).map(function (_ref2) {
+      var _ref3 = Object(_babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__["default"])(_ref2, 2),
+          rel = _ref3[0],
+          href = _ref3[1];
+
+      var tag = document.createElement('link');
+      tag.setAttribute('rel', rel);
+      tag.setAttribute('href', href);
+      return tag;
+    });
+
+    var headElement = document.getElementsByTagName('head').item(0);
+    linkTags.forEach(function (tag) {
+      if (headElement) {
+        headElement.appendChild(tag);
+      }
+    });
+    return function () {
+      linkTags.forEach(function (tag) {
+        if (headElement) {
+          headElement.removeChild(tag);
+        }
+      });
+    };
+  }, []);
+  return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_6__["jsx"])(next_head__WEBPACK_IMPORTED_MODULE_3___default.a, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 36
+      lineNumber: 70
     },
     __self: this
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])("title", {
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_6__["jsx"])("title", {
     key: "title",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 37
+      lineNumber: 71
     },
     __self: this
-  }, title), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])("meta", {
+  }, title), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_6__["jsx"])("meta", {
     charSet: charset,
     key: "charSet",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 38
+      lineNumber: 72
     },
     __self: this
-  }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])("meta", {
+  }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_6__["jsx"])("meta", {
     name: "description",
     key: "description",
     content: description,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 39
+      lineNumber: 73
     },
     __self: this
-  }), themeColor && Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])("meta", {
+  }), themeColor && Object(_emotion_core__WEBPACK_IMPORTED_MODULE_6__["jsx"])("meta", {
     name: "theme-color",
     key: "theme-color",
     content: themeColor,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 40
+      lineNumber: 74
     },
     __self: this
-  }), hrefManifest && Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])(_Link__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    href: hrefManifest,
-    key: "manifest",
-    passHref: true,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 42
-    },
-    __self: this
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])("link", {
-    key: "manifest",
-    rel: "manifest",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 43
-    },
-    __self: this
-  })), !isAmp && hrefCanonical && Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])(_Link__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    href: hrefCanonical,
-    key: "canonical",
-    passHref: true,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 47
-    },
-    __self: this
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])("link", {
-    key: "canonical",
-    rel: "canonical",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 48
-    },
-    __self: this
-  })), favIconPath && Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])(_Link__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    href: favIconPath,
-    key: "fav-icon",
-    passHref: true,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 52
-    },
-    __self: this
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])("link", {
-    rel: "shortcut icon",
-    key: "fav-icon",
-    type: "image/x-icon",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 53
-    },
-    __self: this
-  })), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])("meta", {
+  }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_6__["jsx"])("meta", {
     name: "keywords",
     key: "keywords",
     content: keywords,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 56
+      lineNumber: 75
     },
     __self: this
-  }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])("meta", {
+  }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_6__["jsx"])("meta", {
     httpEquiv: "X-UA-Compatible",
     key: "ua-compatible",
     content: "ie=edge",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 57
+      lineNumber: 76
     },
     __self: this
-  }), refresh && Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])("meta", {
+  }), refresh && Object(_emotion_core__WEBPACK_IMPORTED_MODULE_6__["jsx"])("meta", {
     httpEquiv: "refresh",
     key: "refresh",
     content: "".concat(refresh),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 58
+      lineNumber: 77
     },
     __self: this
-  }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])("meta", {
+  }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_6__["jsx"])("meta", {
     name: "apple-mobile-web-app-capable",
     key: "apple-mobile-web-app-capable",
     content: "yes",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 61
+      lineNumber: 80
     },
     __self: this
-  }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])("meta", {
+  }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_6__["jsx"])("meta", {
     name: "apple-mobile-web-app-status-bar-style",
     key: "apple-mobile-web-app-status-bar-style",
     content: "blue",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 62
+      lineNumber: 81
     },
     __self: this
-  }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])("meta", {
+  }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_6__["jsx"])("meta", {
     name: "apple-mobile-web-app-title",
     key: "apple-mobile-web-app-title",
     content: "With Manifest",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 67
+      lineNumber: 86
     },
     __self: this
-  }), appleIconPath && appleIconSize && Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])(_Link__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  }), appleIconPath && appleIconSize && Object(_emotion_core__WEBPACK_IMPORTED_MODULE_6__["jsx"])(_Link__WEBPACK_IMPORTED_MODULE_4__["default"], {
     href: appleIconPath,
     key: "apple-touch-icon",
     passHref: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 73
+      lineNumber: 92
     },
     __self: this
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])("link", {
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_6__["jsx"])("link", {
     rel: "apple-touch-icon",
     key: "apple-touch-icon",
     sizes: appleIconSize,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 74
+      lineNumber: 93
     },
     __self: this
-  })), appleIconPath && Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])("meta", {
+  })), appleIconPath && Object(_emotion_core__WEBPACK_IMPORTED_MODULE_6__["jsx"])("meta", {
     name: "msapplication-TitleImage",
     key: "msapplication-TitleImage",
-    content: "".concat(_Link__WEBPACK_IMPORTED_MODULE_2__["linkPrefix"]).concat(appleIconPath),
+    content: Object(_utils_common_prefixLink__WEBPACK_IMPORTED_MODULE_5__["default"])(appleIconPath),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 80
+      lineNumber: 99
     },
     __self: this
-  }), themeColor && Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])("meta", {
+  }), themeColor && Object(_emotion_core__WEBPACK_IMPORTED_MODULE_6__["jsx"])("meta", {
     name: "msapplication-TitleColor",
     key: "msapplication-TitleColor",
     content: themeColor,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 87
+      lineNumber: 106
     },
     __self: this
   }), children);
@@ -11556,20 +11732,18 @@ var Head = function Head(_ref) {
 /*!***************************************!*\
   !*** ./src/components/Link/index.tsx ***!
   \***************************************/
-/*! exports provided: linkPrefix, default */
+/*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "linkPrefix", function() { return linkPrefix; });
 /* harmony import */ var _babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/extends */ "./node_modules/@babel/runtime-corejs2/helpers/esm/extends.js");
 /* harmony import */ var _babel_runtime_corejs2_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/objectWithoutProperties */ "./node_modules/@babel/runtime-corejs2/helpers/esm/objectWithoutProperties.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var next_config__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! next/config */ "./node_modules/next/dist/next-server/lib/runtime-config.js");
-/* harmony import */ var next_config__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_config__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _utils_common_prefixLink__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../utils/common/prefixLink */ "./src/utils/common/prefixLink.tsx");
 /* harmony import */ var _emotion_core__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @emotion/core */ "./node_modules/@emotion/core/dist/core.browser.esm.js");
 
 
@@ -11580,31 +11754,58 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement;
 
 
 
-var _getConfig = next_config__WEBPACK_IMPORTED_MODULE_3___default()(),
-    publicRuntimeConfig = _getConfig.publicRuntimeConfig;
-
-var linkPrefix = publicRuntimeConfig.linkPrefix;
-
-
 var PrefixedLink = function PrefixedLink(_ref) {
   var href = _ref.href,
       _ref$as = _ref.as,
       as = _ref$as === void 0 ? href : _ref$as,
       props = Object(_babel_runtime_corejs2_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__["default"])(_ref, ["href", "as"]);
 
-  return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_5__["jsx"])(next_link__WEBPACK_IMPORTED_MODULE_4___default.a, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
-    href: href,
-    as: "".concat(linkPrefix).concat(as)
-  }, props, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 9
-    },
-    __self: this
-  }));
+  return (// eslint-disable-next-line react/jsx-props-no-spreading
+    Object(_emotion_core__WEBPACK_IMPORTED_MODULE_5__["jsx"])(next_link__WEBPACK_IMPORTED_MODULE_3___default.a, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+      href: href,
+      as: Object(_utils_common_prefixLink__WEBPACK_IMPORTED_MODULE_4__["default"])(as.toString())
+    }, props, {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 7
+      },
+      __self: this
+    }))
+  );
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (PrefixedLink);
+
+/***/ }),
+
+/***/ "./src/utils/common/prefixLink.tsx":
+/*!*****************************************!*\
+  !*** ./src/utils/common/prefixLink.tsx ***!
+  \*****************************************/
+/*! exports provided: linkPrefix, customDomain, default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "linkPrefix", function() { return linkPrefix; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "customDomain", function() { return customDomain; });
+/* harmony import */ var next_config__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! next/config */ "./node_modules/next/dist/next-server/lib/runtime-config.js");
+/* harmony import */ var next_config__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(next_config__WEBPACK_IMPORTED_MODULE_0__);
+
+
+var _getConfig = next_config__WEBPACK_IMPORTED_MODULE_0___default()(),
+    publicRuntimeConfig = _getConfig.publicRuntimeConfig;
+
+var _publicRuntimeConfig$ = publicRuntimeConfig.customDomain,
+    customDomain = _publicRuntimeConfig$ === void 0 ? '' : _publicRuntimeConfig$,
+    linkPrefix = publicRuntimeConfig.linkPrefix;
+
+
+var prefixLink = function prefixLink(path) {
+  return "".concat(customDomain).concat(linkPrefix).concat(path);
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (prefixLink);
 
 /***/ }),
 
