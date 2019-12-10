@@ -51,7 +51,7 @@ function withRedux<A extends Action = AnyAction, S extends Store<any, A> = Store
     { isServer: typeof window === 'undefined' },
     optionalConfig
   );
-  const { storeKey, isServer, deserializeState, serializeState } = config;
+  const { storeKey, isServer, deserializeState, serializeState, ssr } = config;
 
   const serveStore = ({ initialState, ctx }: InitStoreOptions<S>): S => {
     const createStore = () =>
@@ -81,25 +81,27 @@ function withRedux<A extends Action = AnyAction, S extends Store<any, A> = Store
       return <App {...props} {...initialProps} store={store} />;
     };
 
-    WrappedApp.getInitialProps = async appCtx => {
-      const store = serveStore({ ctx: appCtx.ctx });
+    if (ssr || App.getInitialProps) {
+      WrappedApp.getInitialProps = async appCtx => {
+        const store = serveStore({ ctx: appCtx.ctx });
 
-      // eslint-disable-next-line no-param-reassign
-      appCtx.ctx.store = store;
-      // eslint-disable-next-line no-param-reassign
-      appCtx.ctx.isServer = isServer;
+        // eslint-disable-next-line no-param-reassign
+        appCtx.ctx.store = store;
+        // eslint-disable-next-line no-param-reassign
+        appCtx.ctx.isServer = isServer;
 
-      let initialProps = {};
-      if (App.getInitialProps) {
-        initialProps = await App.getInitialProps.call(App, appCtx);
-      }
+        const initialProps =
+          typeof App.getInitialProps === 'function'
+            ? await App.getInitialProps.call(App, appCtx)
+            : {};
 
-      return {
-        isServer,
-        initialState: serializeState(store.getState()),
-        initialProps,
+        return {
+          isServer,
+          initialState: serializeState(store.getState()),
+          initialProps,
+        };
       };
-    };
+    }
 
     return WrappedApp;
   };

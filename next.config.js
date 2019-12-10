@@ -61,6 +61,7 @@ module.exports = withManifest(
 
     manifest: {
       /* eslint-disable @typescript-eslint/camelcase */
+      output: './public/static',
       short_name: displayName,
       name: displayName,
       start_url: `${prodAssetPrefix}/`,

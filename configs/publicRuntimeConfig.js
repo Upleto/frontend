@@ -1,5 +1,6 @@
 const { name, keywords } = require('../package.json');
 
+const staticOptimization = true;
 const displayName = 'upleto';
 const themeColor = 'red';
 
@@ -15,4 +16,6 @@ module.exports = {
   serviceWorkerFilename,
   displayName,
   themeColor,
+  commonKeywords,
+  staticOptimization,
 };

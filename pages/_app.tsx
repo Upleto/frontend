@@ -2,11 +2,16 @@ import React from 'react';
 import App from 'next/app';
 import { Provider } from 'react-redux';
 import { Global, css } from '@emotion/core';
+import getConfig from 'next/config';
 import withRedux, { StoreProps } from '../src/utils/redux/withRedux';
 import { ActionWithPayload } from '../src/utils/redux/types';
 import withReduxSaga from '../src/utils/redux/withReduxSaga';
 import initStore, { Store } from '../src/redux/store';
 import { globalButtonReset } from '../src/utils/style/buttonReset';
+
+const { publicRuntimeConfig } = getConfig();
+const { staticOptimization } = publicRuntimeConfig;
+const ssr = !staticOptimization;
 
 class MyApp extends App<StoreProps<Store>> {
   public render() {
@@ -43,6 +48,6 @@ class MyApp extends App<StoreProps<Store>> {
   }
 }
 
-export default withRedux<ActionWithPayload, Store>(initStore)(
-  withReduxSaga<ActionWithPayload, Store>(MyApp)
+export default withRedux<ActionWithPayload, Store>(initStore, { ssr })(
+  withReduxSaga<ActionWithPayload, Store>(MyApp, { ssr })
 );
