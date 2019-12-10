@@ -35,9 +35,6 @@ export const Page: FC = () => {
         keywords={commonKeyWords}
         themeColor={themeColor}
         hrefCanonical="/page2"
-        favIconPath="/static/icons/favicon.ico"
-        appleIconPath="/static/icons/icon192x192.png"
-        hrefManifest="/static/manifest/manifest.json"
       />
       <span>{`Number is: ${num}`}</span>
       <button type="button" onClick={() => dispatch({ type: ActionTypes.DECREASE_B, payload: 2 })}>

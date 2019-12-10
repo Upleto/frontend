@@ -38,9 +38,6 @@ const Page: FC = () => (
       keywords={commonKeywords}
       themeColor={themeColor}
       hrefCanonical="/"
-      favIconPath="/static/icons/favicon.ico"
-      appleIconPath="/static/icons/icon192x192.png"
-      hrefManifest="/static/manifest/manifest.json"
     />
     <header>
       <h1

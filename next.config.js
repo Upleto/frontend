@@ -10,6 +10,8 @@ const {
   linkPrefix,
   prodAssetPrefix,
   serviceWorkerFilename,
+  png192Path,
+  png512Path,
 } = publicRuntimeConfig;
 
 module.exports = withManifest(
@@ -72,12 +74,12 @@ module.exports = withManifest(
       theme_color: themeColor,
       icons: [
         {
-          src: `${prodAssetPrefix}/static/icons/icon192x192.png`,
+          src: `${prodAssetPrefix}${png192Path}`,
           sizes: '192x192',
           type: 'image/png',
         },
         {
-          src: `${prodAssetPrefix}/static/icons/icon512x512.png`,
+          src: `${prodAssetPrefix}${png512Path}`,
           sizes: '512x512',
           type: 'image/png',
         },

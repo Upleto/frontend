@@ -1,7 +1,16 @@
 import React, { useEffect } from 'react';
 import NextHead from 'next/head';
+import getConfig from 'next/config';
 import Link from '../Link';
 import prefixLink from '../../utils/common/prefixLink';
+
+const { publicRuntimeConfig } = getConfig();
+const {
+  commonKeywords,
+  themeColor: defaultThemeColor,
+  manifestPath,
+  png192Path,
+} = publicRuntimeConfig;
 
 interface Props {
   title?: string;
@@ -21,15 +30,15 @@ interface Props {
 
 const Head: React.FC<Props> = ({
   title = '',
-  description = title,
+  description = commonKeywords || title,
   charset = 'utf-8',
   hrefCanonical,
-  hrefManifest,
-  themeColor,
+  hrefManifest = manifestPath,
+  themeColor = defaultThemeColor,
   favIconPath,
   keywords = title,
   refresh,
-  appleIconPath,
+  appleIconPath = png192Path,
   appleIconSize = '192x192',
   isAmp,
   children,
