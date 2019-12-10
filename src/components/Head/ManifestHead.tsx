@@ -44,22 +44,27 @@ const Head: React.FC<Props> = ({
   isAmp,
   children,
 }) => {
-  const linkToAdd: Record<string, string> = {};
+  const linkToAdd: Record<string, { [key in string]: string }> = {};
   if (hrefManifest) {
-    linkToAdd.manifest = prefixLink(hrefManifest);
+    linkToAdd.manifest = { href: prefixLink(hrefManifest) };
   }
   if (!isAmp && hrefCanonical) {
-    linkToAdd.canonical = prefixLink(hrefCanonical);
+    linkToAdd.canonical = { href: prefixLink(hrefCanonical) };
   }
   if (favIconPath) {
-    linkToAdd['shortcut icon'] = prefixLink(favIconPath);
+    linkToAdd['shortcut icon'] = { href: prefixLink(favIconPath) };
+  }
+  if (appleIconPath) {
+    linkToAdd['apple-touch-icon'] = { href: prefixLink(appleIconPath), sizes: appleIconSize };
   }
 
   useEffect(() => {
-    const linkTags = Object.entries(linkToAdd).map(([rel, href]) => {
+    const linkTags = Object.entries(linkToAdd).map(([rel, attrs]) => {
       const tag = document.createElement('link');
       tag.setAttribute('rel', rel);
-      tag.setAttribute('href', href);
+      Object.keys(attrs).forEach(attr => {
+        tag.setAttribute(attr, attrs[attr]);
+      });
       return tag;
     });
     const headElement = document.getElementsByTagName('head').item(0);

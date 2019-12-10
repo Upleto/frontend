@@ -1,0 +1,23 @@
+{
+	"name": "upleto",
+	"short_name": "upleto",
+	"icons": [
+		{
+			"src": "/frontend/static/icons/icon192x192.png",
+			"sizes": "192x192",
+			"type": "image/png"
+		},
+		{
+			"src": "/frontend/static/icons/icon512x512.png",
+			"sizes": "512x512",
+			"type": "image/png"
+		}
+	],
+	"start_url": "/frontend/",
+	"display": "standalone",
+	"orientation": "natural",
+	"background_color": "red",
+	"theme_color": "red",
+	"scope": "/frontend/",
+	"dir": "ltr"
+}
