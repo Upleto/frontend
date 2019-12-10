@@ -10,6 +10,7 @@ const {
   themeColor: defaultThemeColor,
   manifestPath,
   png192Path,
+  favIconPath: defaultFavIconPath,
 } = publicRuntimeConfig;
 
 interface Props {
@@ -35,7 +36,7 @@ const Head: React.FC<Props> = ({
   hrefCanonical,
   hrefManifest = manifestPath,
   themeColor = defaultThemeColor,
-  favIconPath,
+  favIconPath = defaultFavIconPath,
   keywords = title,
   refresh,
   appleIconPath = png192Path,
