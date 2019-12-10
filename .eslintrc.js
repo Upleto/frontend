@@ -17,7 +17,7 @@ module.exports =  {
   env: {
     browser: true,
     node: true,
-    jest: true,
+    jest: true
   },
   rules:  {
     // Place to specify ESLint rules. Can be used to overwrite rules specified from the extended configs
@@ -29,9 +29,11 @@ module.exports =  {
       'ignoreRestSiblings': false
     }],
     'react/jsx-filename-extension': [1, { 'extensions': ['.js', '.jsx', '.ts', '.tsx'] }],
+    'react/jsx-first-prop-new-line': 0,
     '@typescript-eslint/no-explicit-any': 'off',
     '@typescript-eslint/explicit-function-return-type': 0,
-    '@typescript-eslint/no-object-literal-type-assertion': ['error', {'allowAsParameter': true}],
+    '@typescript-eslint/no-object-literal-type-assertion': ['error', { 'allowAsParameter': true }],
+    '@typescript-eslint/no-namespace': 'off',
     'jsx-a11y/anchor-is-valid': [ 'error', {
       'components': [ 'Link' ],
       'specialLink': [ 'hrefLeft', 'hrefRight' ],
@@ -54,10 +56,15 @@ module.exports =  {
         'functions': 'never'
       }
     ],
-    'react-hooks/rules-of-hooks': 'error',
-    'react-hooks/exhaustive-deps': 'off'
+    "emotion/no-vanilla": "error",
+    "emotion/import-from-emotion": "error",
+    "emotion/styled-import": "error",
+    "react-hooks/rules-of-hooks": "error",
+    'react-hooks/exhaustive-deps': 'off',
+    'no-bitwise': 'off'
   },
   plugins: [
+    'emotion',
     '@typescript-eslint/eslint-plugin',
     'react-hooks'
   ],
@@ -71,4 +78,4 @@ module.exports =  {
       version:  'detect',  // Tells eslint-plugin-react to automatically detect the version of React to use
     },
   },
-}
+};
