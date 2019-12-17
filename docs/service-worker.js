@@ -1,35 +1,43 @@
 self.__precacheManifest = [
   {
-    "url": "/frontend/_next/static/0bL1ZmZ4cpa_EhSTqRRVd/pages/_app.js",
-    "revision": "6ec8db67f6bdfda8b5a3"
+    "url": "/frontend/_next/static/1oMSxK1sIn2hCgqGPf54T/pages/_app.js",
+    "revision": "49b47fd3364b2ecdf708"
   },
   {
-    "url": "/frontend/_next/static/0bL1ZmZ4cpa_EhSTqRRVd/pages/_error.js",
-    "revision": "8d0929927e1fc4219b2e"
+    "url": "/frontend/_next/static/1oMSxK1sIn2hCgqGPf54T/pages/_error.js",
+    "revision": "d9fc4a86f210eaeeabe2"
   },
   {
-    "url": "/frontend/_next/static/0bL1ZmZ4cpa_EhSTqRRVd/pages/index.js",
-    "revision": "fa3f7dffb8b2fdb1a1f2"
+    "url": "/frontend/_next/static/1oMSxK1sIn2hCgqGPf54T/pages/index.js",
+    "revision": "b8b3ac3936db94d947ec"
   },
   {
-    "url": "/frontend/_next/static/0bL1ZmZ4cpa_EhSTqRRVd/pages/page1.js",
-    "revision": "d21daefd5bd273ff720d"
+    "url": "/frontend/_next/static/1oMSxK1sIn2hCgqGPf54T/pages/login-register.js",
+    "revision": "98c763c12598cf122106"
   },
   {
-    "url": "/frontend/_next/static/0bL1ZmZ4cpa_EhSTqRRVd/pages/page2.js",
-    "revision": "eacc3913a8eaf6725deb"
+    "url": "/frontend/_next/static/1oMSxK1sIn2hCgqGPf54T/pages/page1.js",
+    "revision": "7497e45c31c935358839"
   },
   {
-    "url": "/frontend/_next/static/chunks/commons.e095f856212f243350eb.js",
-    "revision": "1381f513a07eb4601ee5"
+    "url": "/frontend/_next/static/1oMSxK1sIn2hCgqGPf54T/pages/page2.js",
+    "revision": "3f0cc35c4d106f8ad2de"
   },
   {
-    "url": "/frontend/_next/static/runtime/main-5ffb87fdeca77a49c41f.js",
-    "revision": "30bad19c4ae2355a3987"
+    "url": "/frontend/_next/static/1oMSxK1sIn2hCgqGPf54T/pages/renter.js",
+    "revision": "d60ff79e82a3428bae17"
   },
   {
-    "url": "/frontend/_next/static/runtime/polyfills-2fff68c13affbed5c162.js",
-    "revision": "54d0d9ac7e0954ddda88"
+    "url": "/frontend/_next/static/chunks/commons.d50b0897b79b27d5d357.js",
+    "revision": "3eed72d963a7cf0363e8"
+  },
+  {
+    "url": "/frontend/_next/static/runtime/main-c10d828031bbb6190b41.js",
+    "revision": "4aef48e57712cfe28725"
+  },
+  {
+    "url": "/frontend/_next/static/runtime/polyfills-0638c93e5165546c7715.js",
+    "revision": "1f353f931d91cc32f5ca"
   },
   {
     "url": "/frontend/_next/static/runtime/webpack-035ac2b14bde147cb4a8.js",
