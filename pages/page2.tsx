@@ -1,3 +1,5 @@
+// kept for demonstration
+
 import React, { FC } from 'react';
 import getConfig from 'next/config';
 import { useSelector, useDispatch } from 'react-redux';

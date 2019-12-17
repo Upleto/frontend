@@ -50,17 +50,10 @@ const Page: FC = () => (
       </h1>
     </header>
     <main>
-      <Link href="/page1">
+      <Link href="/renter">
         <a>
           <div css={linkBoardStyles}>
-            <span>page1</span>
-          </div>
-        </a>
-      </Link>
-      <Link href="/page2">
-        <a>
-          <div css={linkBoardStyles}>
-            <span>page2</span>
+            <span>Renter</span>
           </div>
         </a>
       </Link>
