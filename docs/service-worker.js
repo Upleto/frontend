@@ -1,43 +1,51 @@
 self.__precacheManifest = [
   {
-    "url": "/frontend/_next/static/1oMSxK1sIn2hCgqGPf54T/pages/_app.js",
-    "revision": "49b47fd3364b2ecdf708"
+    "url": "/frontend/_next/static/SM_kR3hxIPLDiXEu-68uS/pages/_app.js",
+    "revision": "8a0f36f2c31084a9fb5f"
   },
   {
-    "url": "/frontend/_next/static/1oMSxK1sIn2hCgqGPf54T/pages/_error.js",
-    "revision": "d9fc4a86f210eaeeabe2"
+    "url": "/frontend/_next/static/SM_kR3hxIPLDiXEu-68uS/pages/_error.js",
+    "revision": "8560cc601a36984a38cd"
   },
   {
-    "url": "/frontend/_next/static/1oMSxK1sIn2hCgqGPf54T/pages/index.js",
-    "revision": "b8b3ac3936db94d947ec"
+    "url": "/frontend/_next/static/SM_kR3hxIPLDiXEu-68uS/pages/index.js",
+    "revision": "992070d3e0c630d393e9"
   },
   {
-    "url": "/frontend/_next/static/1oMSxK1sIn2hCgqGPf54T/pages/login-register.js",
-    "revision": "98c763c12598cf122106"
+    "url": "/frontend/_next/static/SM_kR3hxIPLDiXEu-68uS/pages/lease-agreement.js",
+    "revision": "be30eaa0f1736d8fe583"
   },
   {
-    "url": "/frontend/_next/static/1oMSxK1sIn2hCgqGPf54T/pages/page1.js",
-    "revision": "7497e45c31c935358839"
+    "url": "/frontend/_next/static/SM_kR3hxIPLDiXEu-68uS/pages/login-register.js",
+    "revision": "22670887990c0ec2cfab"
   },
   {
-    "url": "/frontend/_next/static/1oMSxK1sIn2hCgqGPf54T/pages/page2.js",
-    "revision": "3f0cc35c4d106f8ad2de"
+    "url": "/frontend/_next/static/SM_kR3hxIPLDiXEu-68uS/pages/page1.js",
+    "revision": "bcf4fc0469fc59981a58"
   },
   {
-    "url": "/frontend/_next/static/1oMSxK1sIn2hCgqGPf54T/pages/renter.js",
-    "revision": "d60ff79e82a3428bae17"
+    "url": "/frontend/_next/static/SM_kR3hxIPLDiXEu-68uS/pages/page2.js",
+    "revision": "01eb9dd3f31cf13aa184"
   },
   {
-    "url": "/frontend/_next/static/chunks/commons.d50b0897b79b27d5d357.js",
-    "revision": "3eed72d963a7cf0363e8"
+    "url": "/frontend/_next/static/SM_kR3hxIPLDiXEu-68uS/pages/payment.js",
+    "revision": "0d5f1d38e998064b193c"
   },
   {
-    "url": "/frontend/_next/static/runtime/main-c10d828031bbb6190b41.js",
-    "revision": "4aef48e57712cfe28725"
+    "url": "/frontend/_next/static/SM_kR3hxIPLDiXEu-68uS/pages/renter.js",
+    "revision": "788a4d2699056fd26888"
   },
   {
-    "url": "/frontend/_next/static/runtime/polyfills-0638c93e5165546c7715.js",
-    "revision": "1f353f931d91cc32f5ca"
+    "url": "/frontend/_next/static/chunks/commons.6881ccbb291c7e8620e2.js",
+    "revision": "3207618ac8a633180290"
+  },
+  {
+    "url": "/frontend/_next/static/runtime/main-62f7bc2e90d01265d999.js",
+    "revision": "7c3dfbc4e5d9331d52ea"
+  },
+  {
+    "url": "/frontend/_next/static/runtime/polyfills-f5af81b00d12d923ec0f.js",
+    "revision": "c133b2cadab912d169ad"
   },
   {
     "url": "/frontend/_next/static/runtime/webpack-035ac2b14bde147cb4a8.js",

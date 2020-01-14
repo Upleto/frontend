@@ -1,4 +1,4 @@
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/renter.js"],{
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/payment.js"],{
 
 /***/ "./node_modules/@babel/runtime-corejs2/core-js/array/from.js":
 /*!*******************************************************************!*\
@@ -9154,21 +9154,21 @@ var assign=Object.assign.bind(Object);function g(){return assign;}Object.defineP
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Frenter&absolutePagePath=%2FUsers%2Fdavid.chen%2FDocuments%2Fprojects%2Ffrontend%2Fpages%2Frenter.tsx!./":
-/*!***********************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Frenter&absolutePagePath=%2FUsers%2Fdavid.chen%2FDocuments%2Fprojects%2Ffrontend%2Fpages%2Frenter.tsx ***!
-  \***********************************************************************************************************************************************************************************************/
+/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fpayment&absolutePagePath=%2FUsers%2Fdavid.chen%2FDocuments%2Fprojects%2Ffrontend%2Fpages%2Fpayment.tsx!./":
+/*!*************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fpayment&absolutePagePath=%2FUsers%2Fdavid.chen%2FDocuments%2Fprojects%2Ffrontend%2Fpages%2Fpayment.tsx ***!
+  \*************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-    (window.__NEXT_P=window.__NEXT_P||[]).push(["/renter", function() {
-      var mod = __webpack_require__(/*! ./pages/renter.tsx */ "./pages/renter.tsx")
+    (window.__NEXT_P=window.__NEXT_P||[]).push(["/payment", function() {
+      var mod = __webpack_require__(/*! ./pages/payment.tsx */ "./pages/payment.tsx")
       if(true) {
-        module.hot.accept(/*! ./pages/renter.tsx */ "./pages/renter.tsx", function() {
-          if(!next.router.components["/renter"]) return
-          var updatedPage = __webpack_require__(/*! ./pages/renter.tsx */ "./pages/renter.tsx")
-          next.router.update("/renter", updatedPage)
+        module.hot.accept(/*! ./pages/payment.tsx */ "./pages/payment.tsx", function() {
+          if(!next.router.components["/payment"]) return
+          var updatedPage = __webpack_require__(/*! ./pages/payment.tsx */ "./pages/payment.tsx")
+          next.router.update("/payment", updatedPage)
         })
       }
       return mod
@@ -16195,10 +16195,10 @@ module.exports = function(originalModule) {
 
 /***/ }),
 
-/***/ "./pages/renter.tsx":
-/*!**************************!*\
-  !*** ./pages/renter.tsx ***!
-  \**************************/
+/***/ "./pages/payment.tsx":
+/*!***************************!*\
+  !*** ./pages/payment.tsx ***!
+  \***************************/
 /*! exports provided: Page, default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -16211,13 +16211,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_config__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_config__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _src_components_Head_ManifestHead__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../src/components/Head/ManifestHead */ "./src/components/Head/ManifestHead.tsx");
 /* harmony import */ var _src_utils_redux_dynamicStoreCallbackWrap__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../src/utils/redux/dynamicStoreCallbackWrap */ "./src/utils/redux/dynamicStoreCallbackWrap.tsx");
-/* harmony import */ var _src_components_Link__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../src/components/Link */ "./src/components/Link/index.tsx");
-/* harmony import */ var _src_redux_reducers_reducerCombo__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../src/redux/reducers/reducerCombo */ "./src/redux/reducers/reducerCombo.ts");
-/* harmony import */ var _src_components_Renter__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../src/components/Renter */ "./src/components/Renter/index.tsx");
-/* harmony import */ var _emotion_core__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @emotion/core */ "./node_modules/@emotion/core/dist/core.browser.esm.js");
-var _jsxFileName = "/Users/david.chen/Documents/projects/frontend/pages/renter.tsx";
+/* harmony import */ var _src_redux_reducers_reducerCombo__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../src/redux/reducers/reducerCombo */ "./src/redux/reducers/reducerCombo.ts");
+/* harmony import */ var _src_components_Payment__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../src/components/Payment */ "./src/components/Payment/index.tsx");
+/* harmony import */ var _emotion_core__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @emotion/core */ "./node_modules/@emotion/core/dist/core.browser.esm.js");
+var _jsxFileName = "/Users/david.chen/Documents/projects/frontend/pages/payment.tsx";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
 
 
 
@@ -16233,47 +16231,34 @@ var commonKeyWords = publicRuntimeConfig.commonKeyWords,
     themeColor = publicRuntimeConfig.themeColor;
 
 var callbackOnMount = function callbackOnMount(store) {
-  store.substitueReducers(_src_redux_reducers_reducerCombo__WEBPACK_IMPORTED_MODULE_5__["renterPlusLoginReducers"]);
+  store.substitueReducers(_src_redux_reducers_reducerCombo__WEBPACK_IMPORTED_MODULE_4__["renterPlusLoginReducers"]);
 };
 
 var Page = function Page() {
-  return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("div", {
+  return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_6__["jsx"])("div", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19
+    },
+    __self: this
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_6__["jsx"])(_src_components_Head_ManifestHead__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    title: "login-register",
+    description: "login-register",
+    keywords: commonKeyWords,
+    themeColor: themeColor,
+    hrefCanonical: "/login-register",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 20
     },
     __self: this
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])(_src_components_Head_ManifestHead__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    title: "renter",
-    description: "renter",
-    keywords: commonKeyWords,
-    themeColor: themeColor,
-    hrefCanonical: "/renter",
+  }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_6__["jsx"])(_src_components_Payment__WEBPACK_IMPORTED_MODULE_5__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21
+      lineNumber: 27
     },
     __self: this
-  }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])(_src_components_Renter__WEBPACK_IMPORTED_MODULE_6__["default"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 28
-    },
-    __self: this
-  }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])(_src_components_Link__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    href: "/",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 29
-    },
-    __self: this
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("a", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 30
-    },
-    __self: this
-  }, "back to index")));
+  }));
 };
 /* harmony default export */ __webpack_exports__["default"] = (Object(_src_utils_redux_dynamicStoreCallbackWrap__WEBPACK_IMPORTED_MODULE_3__["default"])({
   callbackOnMount: callbackOnMount,
@@ -16592,10 +16577,10 @@ var PrefixedLink = function PrefixedLink(_ref) {
 
 /***/ }),
 
-/***/ "./src/components/Renter/index.tsx":
-/*!*****************************************!*\
-  !*** ./src/components/Renter/index.tsx ***!
-  \*****************************************/
+/***/ "./src/components/Payment/index.tsx":
+/*!******************************************!*\
+  !*** ./src/components/Payment/index.tsx ***!
+  \******************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -16603,146 +16588,55 @@ var PrefixedLink = function PrefixedLink(_ref) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _emotion_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @emotion/core */ "./node_modules/@emotion/core/dist/core.browser.esm.js");
-/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
-/* harmony import */ var _Link__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../Link */ "./src/components/Link/index.tsx");
-/* harmony import */ var _utils_redux_actionCreator__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../utils/redux/actionCreator */ "./src/utils/redux/actionCreator.ts");
-/* harmony import */ var _redux_actions_actionTypes__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../redux/actions/actionTypes */ "./src/redux/actions/actionTypes.ts");
-var _jsxFileName = "/Users/david.chen/Documents/projects/frontend/src/components/Renter/index.tsx";
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
+/* harmony import */ var _Link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../Link */ "./src/components/Link/index.tsx");
+/* harmony import */ var _emotion_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @emotion/core */ "./node_modules/@emotion/core/dist/core.browser.esm.js");
+var _jsxFileName = "/Users/david.chen/Documents/projects/frontend/src/components/Payment/index.tsx";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
-function _EMOTION_STRINGIFIED_CSS_ERROR__() { return "You have tried to stringify object returned from `css` function. It isn't supposed to be used directly (e.g. as value of the `className` prop), but rather handed to emotion so it can handle it (e.g. as value of `css` prop)."; }
 
 
 
 
+var mapStateToProps = function mapStateToProps(state) {
+  var _ref, _state$payment;
 
-
-
-
-var RenterStyle = false ? undefined : {
-  name: "gpvi0u-RenterStyle",
-  styles: "display:flex;flex-flow:column;align-items:center;;label:RenterStyle;",
-  map: "/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9kYXZpZC5jaGVuL0RvY3VtZW50cy9wcm9qZWN0cy9mcm9udGVuZC9zcmMvY29tcG9uZW50cy9SZW50ZXIvaW5kZXgudHN4Il0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQVN1QiIsImZpbGUiOiIvVXNlcnMvZGF2aWQuY2hlbi9Eb2N1bWVudHMvcHJvamVjdHMvZnJvbnRlbmQvc3JjL2NvbXBvbmVudHMvUmVudGVyL2luZGV4LnRzeCIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBSZWFjdCwgeyBGQyB9IGZyb20gJ3JlYWN0JztcbmltcG9ydCB7IGNzcyB9IGZyb20gJ0BlbW90aW9uL2NvcmUnO1xuaW1wb3J0IHsgRGlzcGF0Y2ggfSBmcm9tICdyZWR1eCc7XG5pbXBvcnQgeyBjb25uZWN0IH0gZnJvbSAncmVhY3QtcmVkdXgnO1xuaW1wb3J0IExpbmsgZnJvbSAnLi4vTGluayc7XG5pbXBvcnQgYWN0aW9uQ3JlYXRvciBmcm9tICcuLi8uLi91dGlscy9yZWR1eC9hY3Rpb25DcmVhdG9yJztcbmltcG9ydCBBY3Rpb25UeXBlcyBmcm9tICcuLi8uLi9yZWR1eC9hY3Rpb25zL2FjdGlvblR5cGVzJztcbmltcG9ydCB7IENvbm5lY3RlZFByb3BzIH0gZnJvbSAnLi4vLi4vdXRpbHMvcmVkdXgvdHlwZXMnO1xuXG5jb25zdCBSZW50ZXJTdHlsZSA9IGNzc2BcbiAgZGlzcGxheTogZmxleDtcbiAgZmxleC1mbG93OiBjb2x1bW47XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG5gO1xuXG5jb25zdCBtYXBEaXNwYXRjaFRvUHJvcHMgPSAoZGlzcGF0Y2g6IERpc3BhdGNoKSA9PiAoe1xuICBzZXRMb2dpblJlZGlyZWN0VG86IGFjdGlvbkNyZWF0b3IoZGlzcGF0Y2gsIEFjdGlvblR5cGVzLlVQREFURV9MT0dJTl9SRURJUkVDVF9UTyksXG4gIHNldExlYXNlQWdyZWVtZW50UmVkaXJlY3RUbzogYWN0aW9uQ3JlYXRvcihcbiAgICBkaXNwYXRjaCxcbiAgICBBY3Rpb25UeXBlcy5VUERBVEVfTEVBU0VfQUdSRUVNRU5UX1JFRElSRUNUX1RPXG4gICksXG4gIHNldFBheW1lbnRSZWRpcmVjdFRvOiBhY3Rpb25DcmVhdG9yKGRpc3BhdGNoLCBBY3Rpb25UeXBlcy5VUERBVEVfUEFZTUVOVF9SRURJUkVDVF9UTyksXG59KTtcblxudHlwZSBQcm9wcyA9IENvbm5lY3RlZFByb3BzPHVuZGVmaW5lZCwgdHlwZW9mIG1hcERpc3BhdGNoVG9Qcm9wcz47XG5cbmNvbnN0IFJlbnRlcjogRkM8UHJvcHM+ID0gKHtcbiAgc2V0TG9naW5SZWRpcmVjdFRvLFxuICBzZXRMZWFzZUFncmVlbWVudFJlZGlyZWN0VG8sXG4gIHNldFBheW1lbnRSZWRpcmVjdFRvLFxufSkgPT4ge1xuICByZXR1cm4gKFxuICAgIDxkaXYgY3NzPXtSZW50ZXJTdHlsZX0+XG4gICAgICA8aDE+UmVudGVyPC9oMT5cbiAgICAgIDxMaW5rIGhyZWY9XCIvbG9naW4tcmVnaXN0ZXJcIj5cbiAgICAgICAgPGFcbiAgICAgICAgICBvbkNsaWNrPXsoKSA9PiB7XG4gICAgICAgICAgICBzZXRMb2dpblJlZGlyZWN0VG8oJy9yZW50ZXInKTtcbiAgICAgICAgICB9fVxuICAgICAgICA+XG4gICAgICAgICAgbG9naW4vcmVnaXN0ZXJcbiAgICAgICAgPC9hPlxuICAgICAgPC9MaW5rPlxuICAgICAgPExpbmsgaHJlZj1cIi9wcm9maWxlXCI+XG4gICAgICAgIDxhPlByb2ZpbGU8L2E+XG4gICAgICA8L0xpbms+XG4gICAgICA8TGluayBocmVmPVwiL21lc3NhZ2VcIj5cbiAgICAgICAgPGE+TWVzc2FnZTwvYT5cbiAgICAgIDwvTGluaz5cbiAgICAgIDxMaW5rIGhyZWY9XCIvcGF5bWVudFwiPlxuICAgICAgICA8YVxuICAgICAgICAgIG9uQ2xpY2s9eygpID0+IHtcbiAgICAgICAgICAgIHNldFBheW1lbnRSZWRpcmVjdFRvKCcvcmVudGVyJyk7XG4gICAgICAgICAgfX1cbiAgICAgICAgPlxuICAgICAgICAgIFBheW1lbnRcbiAgICAgICAgPC9hPlxuICAgICAgPC9MaW5rPlxuICAgICAgPExpbmsgaHJlZj1cIi9sZWFzZS1hZ3JlZW1lbnRcIj5cbiAgICAgICAgPGFcbiAgICAgICAgICBvbkNsaWNrPXsoKSA9PiB7XG4gICAgICAgICAgICBzZXRMZWFzZUFncmVlbWVudFJlZGlyZWN0VG8oJy9yZW50ZXInKTtcbiAgICAgICAgICB9fVxuICAgICAgICA+XG4gICAgICAgICAgTGVhc2UgQWdyZWVtZW50XG4gICAgICAgIDwvYT5cbiAgICAgIDwvTGluaz5cbiAgICAgIDxMaW5rIGhyZWY9XCIvZmFxXCI+XG4gICAgICAgIDxhPkZBUTwvYT5cbiAgICAgIDwvTGluaz5cbiAgICA8L2Rpdj5cbiAgKTtcbn07XG5cbmV4cG9ydCBkZWZhdWx0IGNvbm5lY3QodW5kZWZpbmVkLCBtYXBEaXNwYXRjaFRvUHJvcHMpKFJlbnRlcik7XG4iXX0= */",
-  toString: _EMOTION_STRINGIFIED_CSS_ERROR__
-};
-
-var mapDispatchToProps = function mapDispatchToProps(dispatch) {
   return {
-    setLoginRedirectTo: Object(_utils_redux_actionCreator__WEBPACK_IMPORTED_MODULE_4__["default"])(dispatch, _redux_actions_actionTypes__WEBPACK_IMPORTED_MODULE_5__["default"].UPDATE_LOGIN_REDIRECT_TO),
-    setLeaseAgreementRedirectTo: Object(_utils_redux_actionCreator__WEBPACK_IMPORTED_MODULE_4__["default"])(dispatch, _redux_actions_actionTypes__WEBPACK_IMPORTED_MODULE_5__["default"].UPDATE_LEASE_AGREEMENT_REDIRECT_TO),
-    setPaymentRedirectTo: Object(_utils_redux_actionCreator__WEBPACK_IMPORTED_MODULE_4__["default"])(dispatch, _redux_actions_actionTypes__WEBPACK_IMPORTED_MODULE_5__["default"].UPDATE_PAYMENT_REDIRECT_TO)
+    redirectTo: (_ref = state === null || state === void 0 ? void 0 : (_state$payment = state.payment) === null || _state$payment === void 0 ? void 0 : _state$payment.redirectTo) !== null && _ref !== void 0 ? _ref : ''
   };
 };
 
-var Renter = function Renter(_ref) {
-  var setLoginRedirectTo = _ref.setLoginRedirectTo,
-      setLeaseAgreementRedirectTo = _ref.setLeaseAgreementRedirectTo,
-      setPaymentRedirectTo = _ref.setPaymentRedirectTo;
-  return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
-    css: RenterStyle,
+var LeaseAgreement = function LeaseAgreement(_ref2) {
+  var redirectTo = _ref2.redirectTo;
+  return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 33
+      lineNumber: 15
     },
     __self: this
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("h1", {
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])("h2", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 34
+      lineNumber: 16
     },
     __self: this
-  }, "Renter"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])(_Link__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    href: "/login-register",
+  }, "Payment"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])(_Link__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    href: redirectTo,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 35
+      lineNumber: 17
     },
     __self: this
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("a", {
-    onClick: function onClick() {
-      setLoginRedirectTo('/renter');
-    },
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])("a", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 36
+      lineNumber: 18
     },
     __self: this
-  }, "login/register")), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])(_Link__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    href: "/profile",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 44
-    },
-    __self: this
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("a", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 45
-    },
-    __self: this
-  }, "Profile")), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])(_Link__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    href: "/message",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 47
-    },
-    __self: this
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("a", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 48
-    },
-    __self: this
-  }, "Message")), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])(_Link__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    href: "/payment",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 50
-    },
-    __self: this
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("a", {
-    onClick: function onClick() {
-      setPaymentRedirectTo('/renter');
-    },
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 51
-    },
-    __self: this
-  }, "Payment")), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])(_Link__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    href: "/lease-agreement",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 59
-    },
-    __self: this
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("a", {
-    onClick: function onClick() {
-      setLeaseAgreementRedirectTo('/renter');
-    },
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 60
-    },
-    __self: this
-  }, "Lease Agreement")), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])(_Link__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    href: "/faq",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 68
-    },
-    __self: this
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("a", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 69
-    },
-    __self: this
-  }, "FAQ")));
+  }, "back")));
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (Object(react_redux__WEBPACK_IMPORTED_MODULE_2__["connect"])(undefined, mapDispatchToProps)(Renter));
+/* harmony default export */ __webpack_exports__["default"] = (Object(react_redux__WEBPACK_IMPORTED_MODULE_1__["connect"])(mapStateToProps)(LeaseAgreement));
 
 /***/ }),
 
@@ -17021,28 +16915,6 @@ var prefixLink = function prefixLink(path) {
 
 /***/ }),
 
-/***/ "./src/utils/redux/actionCreator.ts":
-/*!******************************************!*\
-  !*** ./src/utils/redux/actionCreator.ts ***!
-  \******************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-var actionCreator = function actionCreator(dispatch, type) {
-  return function (payload) {
-    return dispatch({
-      type: type,
-      payload: payload
-    });
-  };
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (actionCreator);
-
-/***/ }),
-
 /***/ "./src/utils/redux/dynamicStoreCallbackWrap.tsx":
 /*!******************************************************!*\
   !*** ./src/utils/redux/dynamicStoreCallbackWrap.tsx ***!
@@ -17116,14 +16988,14 @@ function dynamicStoreCallbackWrap(_ref2) {
 
 /***/ }),
 
-/***/ 2:
-/*!***************************************************************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2Frenter&absolutePagePath=%2FUsers%2Fdavid.chen%2FDocuments%2Fprojects%2Ffrontend%2Fpages%2Frenter.tsx ***!
-  \***************************************************************************************************************************************************/
+/***/ 3:
+/*!*****************************************************************************************************************************************************!*\
+  !*** multi next-client-pages-loader?page=%2Fpayment&absolutePagePath=%2FUsers%2Fdavid.chen%2FDocuments%2Fprojects%2Ffrontend%2Fpages%2Fpayment.tsx ***!
+  \*****************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Frenter&absolutePagePath=%2FUsers%2Fdavid.chen%2FDocuments%2Fprojects%2Ffrontend%2Fpages%2Frenter.tsx! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Frenter&absolutePagePath=%2FUsers%2Fdavid.chen%2FDocuments%2Fprojects%2Ffrontend%2Fpages%2Frenter.tsx!./");
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fpayment&absolutePagePath=%2FUsers%2Fdavid.chen%2FDocuments%2Fprojects%2Ffrontend%2Fpages%2Fpayment.tsx! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fpayment&absolutePagePath=%2FUsers%2Fdavid.chen%2FDocuments%2Fprojects%2Ffrontend%2Fpages%2Fpayment.tsx!./");
 
 
 /***/ }),
@@ -17139,5 +17011,5 @@ module.exports = dll_ef0ff7c60362f24a921f;
 
 /***/ })
 
-},[[2,"static/runtime/webpack.js"]]]);
-//# sourceMappingURL=renter.js.map
+},[[3,"static/runtime/webpack.js"]]]);
+//# sourceMappingURL=payment.js.map

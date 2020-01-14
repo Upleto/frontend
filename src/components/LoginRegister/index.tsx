@@ -15,9 +15,9 @@ const LoginRegisterPageStyle = css`
 `;
 
 const mapStateToProps = (state: RenterPlusLoginState) => ({
-  redirectTo: state?.loginRegister?.redirectTo,
-  username: state?.loginRegister?.username,
-  password: state?.loginRegister?.password,
+  redirectTo: state?.loginRegister?.redirectTo ?? '',
+  username: state?.loginRegister?.username ?? '',
+  password: state?.loginRegister?.password ?? '',
 });
 
 const mapDispatchToProps = (dispatch: Dispatch) => ({
