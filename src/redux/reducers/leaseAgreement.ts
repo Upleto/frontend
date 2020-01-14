@@ -5,30 +5,23 @@ import { ActionWithPayload } from '../../utils/redux/types';
 import ActionTypes from '../actions/actionTypes';
 
 export interface State {
-  username: string;
-  password: string;
+  leaseAgreementLink: string;
   redirectTo: string;
 }
 
 export const initialState: Readonly<State> = {
-  username: '',
-  password: '',
+  leaseAgreementLink: '',
   redirectTo: '',
 };
 
 const reducer: Reducer<Readonly<State>, ActionWithPayload> = (state = initialState, action) => {
   switch (action.type) {
-    case ActionTypes.UPDATE_USERNAME: {
+    case ActionTypes.UPDATE_LEASE_AGREEMENT_LINK: {
       return produce(state, draftState => {
-        draftState.username = action.payload as string;
+        draftState.leaseAgreementLink = action.payload as string;
       });
     }
-    case ActionTypes.UPDATE_PASSWORD: {
-      return produce(state, draftState => {
-        draftState.password = action.payload as string;
-      });
-    }
-    case ActionTypes.UPDATE_LOGIN_REDIRECT_TO: {
+    case ActionTypes.UPDATE_LEASE_AGREEMENT_REDIRECT_TO: {
       return produce(state, draftState => {
         draftState.redirectTo = action.payload as string;
       });

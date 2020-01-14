@@ -1,8 +1,8 @@
 import React, { FC } from 'react';
 import { css } from '@emotion/core';
-import Link from 'next/link';
 import { Dispatch } from 'redux';
 import { connect } from 'react-redux';
+import Link from '../Link';
 import { RenterPlusLoginState } from '../../redux/reducers/reducerCombo';
 import actionCreator from '../../utils/redux/actionCreator';
 import ActionTypes from '../../redux/actions/actionTypes';
@@ -23,7 +23,7 @@ const mapStateToProps = (state: RenterPlusLoginState) => ({
 const mapDispatchToProps = (dispatch: Dispatch) => ({
   setUsername: actionCreator(dispatch, ActionTypes.UPDATE_USERNAME),
   setPassword: actionCreator(dispatch, ActionTypes.UPDATE_PASSWORD),
-  setRedirectTo: actionCreator(dispatch, ActionTypes.UPDATE_REDIRECT_TO),
+  setRedirectTo: actionCreator(dispatch, ActionTypes.UPDATE_LOGIN_REDIRECT_TO),
 });
 
 type Props = ConnectedProps<typeof mapStateToProps, typeof mapDispatchToProps>;

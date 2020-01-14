@@ -55,4 +55,14 @@ export interface Booking {
   property: Property;
   renter: User;
   owner: User;
+  agreement: Agreement;
+}
+
+export interface Agreement {
+  owner: User;
+  renter: User;
+  fromTime: string;
+  toTime: string;
+  dateSigned: string;
+  docLink: string;
 }

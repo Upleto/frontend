@@ -14,23 +14,46 @@ const RenterStyle = css`
 `;
 
 const mapDispatchToProps = (dispatch: Dispatch) => ({
-  setRedirectTo: actionCreator(dispatch, ActionTypes.UPDATE_REDIRECT_TO),
+  setLoginRedirectTo: actionCreator(dispatch, ActionTypes.UPDATE_LOGIN_REDIRECT_TO),
+  setLeaseAgreementRedirectTo: actionCreator(
+    dispatch,
+    ActionTypes.UPDATE_LEASE_AGREEMENT_REDIRECT_TO
+  ),
 });
 
 type Props = ConnectedProps<undefined, typeof mapDispatchToProps>;
 
-const Renter: FC<Props> = ({ setRedirectTo }) => {
+const Renter: FC<Props> = ({ setLoginRedirectTo, setLeaseAgreementRedirectTo }) => {
   return (
     <div css={RenterStyle}>
       <h1>Renter</h1>
       <Link href="/login-register">
         <a
           onClick={() => {
-            setRedirectTo('/renter');
+            setLoginRedirectTo('/renter');
           }}
         >
           login/register
         </a>
+      </Link>
+      <Link href="/profile">
+        <a>Profile</a>
+      </Link>
+      <Link href="/message">
+        <a>Message</a>
+      </Link>
+      <div>payment</div>
+      <Link href="/lease-agreement">
+        <a
+          onClick={() => {
+            setLeaseAgreementRedirectTo('/renter');
+          }}
+        >
+          Lease Agreement
+        </a>
+      </Link>
+      <Link href="/faq">
+        <a>FAQ</a>
       </Link>
     </div>
   );
