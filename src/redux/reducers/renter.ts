@@ -1,12 +1,7 @@
 import { Reducer } from 'redux';
 import { ActionWithPayload } from '../../utils/redux/types';
 import ActionTypes from '../actions/actionTypes';
-import { User, Booking, PaymentTransaction } from './types';
-
-export interface Renter extends User {
-  rental: Booking[];
-  paymentHistory: PaymentTransaction[];
-}
+import { Renter } from './types';
 
 export type State = Renter | null;
 

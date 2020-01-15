@@ -1,4 +1,5 @@
 import { Decimal } from 'decimal.js';
+import { Moment } from 'moment-timezone';
 
 export interface User {
   id: number;
@@ -11,58 +12,99 @@ export interface UserProfile {
   lastName: string;
   displayName: string;
   bio?: string;
-  accounts: PaymentAccount[];
+  accounts: PaymentAccounts;
+  profilePic?: Picture;
+}
+
+export interface Picture {
+  id: number;
+  altInfo?: string;
+  url?: string;
 }
 
 export interface Property {
-  ownerId: number;
+  landlordId: number;
   displayName: string;
   id: number;
   description?: string;
-  pricing: Pricing;
-  availability: Availability[];
-  booking: Booking[];
+  pricings: PropertyPricings;
+  availability: availabilities;
+  bookings: Bookings;
 }
 
-export interface Pricing {
-  ratePerDay: Decimal;
+export type Properties = { id: Property['id'] }[];
+
+export interface PropertyPricing {
+  id: number;
+  ratePerDay?: Decimal;
+  ratePerMonth?: Decimal;
+  period: Period;
+}
+
+export type PropertyPricings = { id: PropertyPricing['id'] }[];
+
+export interface Period {
+  fromTime: Moment;
+  toTime: Moment;
 }
 
 export interface Availability {
-  fromTime: string;
-  toTime: string;
+  id: number;
+  period: Period;
   available: boolean;
 }
+
+export type availabilities = { id: Availability['id'] }[];
 
 export interface PaymentAccount {
   id: number;
   ownerId: number;
   balance?: Decimal;
-  relatedProperty?: Property;
+  relatedBookings?: Bookings;
 }
+
+export type PaymentAccounts = { id: PaymentAccount['id'] }[];
 
 export interface PaymentTransaction {
+  id: number;
   amount: Decimal;
-  to: PaymentAccount;
-  from: PaymentAccount;
+  toPaymentAccountId: PaymentAccount['id'];
+  fromPaymentAccountId: PaymentAccount['id'];
+  time: Moment;
   description?: string;
-  relatedProperty?: Property;
+  relatedPropertyId?: Property['id'];
 }
+
+export type PaymentTransactions = { id: PaymentTransaction['id'] }[];
 
 export interface Booking {
-  fromTime: string;
-  toTime: string;
-  property: Property;
-  renter: User;
-  owner: User;
-  agreement: Agreement;
+  id: number;
+  period: Period;
+  propertyId: Property['id'];
+  renterId: Renter['id'];
+  landlordId: Landlord['id'];
+  agreements: Agreements;
 }
 
+export type Bookings = { id: Booking['id'] }[];
+
 export interface Agreement {
-  owner: User;
-  renter: User;
-  fromTime: string;
-  toTime: string;
-  dateSigned: string;
+  id: number;
+  landlordId: Landlord['id'];
+  renterId: Renter['id'];
+  period: Period;
+  dateSigned: Moment;
   docLink: string;
+}
+
+export type Agreements = { id: Agreement['id'] }[];
+
+export interface Renter extends User {
+  rental: Bookings;
+  paymentHistory: PaymentTransactions;
+}
+
+export interface Landlord extends User {
+  ownedProperties: Properties;
+  paymentHistory: PaymentTransactions;
 }
