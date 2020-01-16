@@ -108,7 +108,7 @@ const Payment: FC<Props> = ({ redirectTo, paymentHistory, paymentAccountsInvolve
       columns,
       data,
       // @ts-ignore
-      initialState: { pageIndex: 0, pageSize: 2, sortBy: [{ id: 'date', desc: true }] },
+      initialState: { pageIndex: 0, pageSize: 10, sortBy: [{ id: 'date', desc: true }] },
       disableSortRemove: true,
     },
     useSortBy,
