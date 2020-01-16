@@ -142,9 +142,12 @@ const Payment: FC<Props> = ({ redirectTo, paymentHistory, paymentAccountsInvolve
               {'Page '}
               <input
                 type="number"
-                defaultValue={pageIndex + 1}
+                value={pageIndex + 1}
+                min="1"
+                max={pageOptions.length}
                 onChange={e => {
-                  const newPageIndex = e.target.value ? parseInt(e.target.value, 10) - 1 : 0;
+                  let newPageIndex = Math.max(parseInt(e.target?.value ?? 1, 10) - 1, 0);
+                  newPageIndex = Number.isNaN(newPageIndex) ? 0 : newPageIndex;
                   gotoPage(newPageIndex);
                 }}
               />
@@ -154,9 +157,11 @@ const Payment: FC<Props> = ({ redirectTo, paymentHistory, paymentAccountsInvolve
               {'Show '}
               <input
                 type="number"
-                defaultValue={pageSize}
+                value={pageSize}
+                min="1"
                 onChange={e => {
-                  const newPageSize = e.target.value ? parseInt(e.target.value, 10) : 1;
+                  let newPageSize = Math.max(parseInt(e.target?.value ?? 1, 10), 1);
+                  newPageSize = Number.isNaN(newPageSize) ? 1 : newPageSize;
                   setPageSize(newPageSize);
                 }}
               />
