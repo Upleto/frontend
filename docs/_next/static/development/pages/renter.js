@@ -16769,6 +16769,8 @@ var ActionTypes;
   ActionTypes["UPDATE_LEASE_AGREEMENT_LINK"] = "UPDATE_LEASE_AGREEMENT_LINK";
   ActionTypes["UPDATE_LEASE_AGREEMENT_REDIRECT_TO"] = "UPDATE_LEASE_AGREEMENT_REDIRECT_TO";
   ActionTypes["UPDATE_PAYMENT_REDIRECT_TO"] = "UPDATE_PAYMENT_REDIRECT_TO";
+  ActionTypes["UPDATE_PAYMENT_HISTORY"] = "UPDATE_PAYMENT_HISTORY";
+  ActionTypes["UPDATE_PAYMENT_ACCOUNTS_INVOLVED"] = "UPDATE_PAYMENT_ACCOUNTS_INVOLVED";
 })(ActionTypes || (ActionTypes = {}));
 
 /* harmony default export */ __webpack_exports__["default"] = (ActionTypes);
@@ -16902,7 +16904,9 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var initialState = {
-  redirectTo: ''
+  redirectTo: '',
+  paymentHistory: {},
+  paymentAccountsInvolved: {}
 };
 
 var reducer = function reducer() {
@@ -16914,6 +16918,20 @@ var reducer = function reducer() {
       {
         return Object(immer__WEBPACK_IMPORTED_MODULE_0__["default"])(state, function (draftState) {
           draftState.redirectTo = action.payload;
+        });
+      }
+
+    case _actions_actionTypes__WEBPACK_IMPORTED_MODULE_1__["default"].UPDATE_PAYMENT_HISTORY:
+      {
+        return Object(immer__WEBPACK_IMPORTED_MODULE_0__["default"])(state, function (draftState) {
+          draftState.paymentHistory = action.payload;
+        });
+      }
+
+    case _actions_actionTypes__WEBPACK_IMPORTED_MODULE_1__["default"].UPDATE_PAYMENT_ACCOUNTS_INVOLVED:
+      {
+        return Object(immer__WEBPACK_IMPORTED_MODULE_0__["default"])(state, function (draftState) {
+          draftState.paymentAccountsInvolved = action.payload;
         });
       }
 
@@ -17116,7 +17134,7 @@ function dynamicStoreCallbackWrap(_ref2) {
 
 /***/ }),
 
-/***/ 2:
+/***/ 4:
 /*!***************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Frenter&absolutePagePath=%2FUsers%2Fdavid.chen%2FDocuments%2Fprojects%2Ffrontend%2Fpages%2Frenter.tsx ***!
   \***************************************************************************************************************************************************/
@@ -17139,5 +17157,5 @@ module.exports = dll_ef0ff7c60362f24a921f;
 
 /***/ })
 
-},[[2,"static/runtime/webpack.js"]]]);
+},[[4,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=renter.js.map
