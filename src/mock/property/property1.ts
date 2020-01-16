@@ -51,17 +51,17 @@ export const booking1: Booking = {
   propertyId: 1,
   renterId: 1,
   landlordId: 2,
-  agreements: [{ id: 1 }],
+  agreementIds: [{ id: 1 }],
 };
 
 const property1: Property = {
   id: 1,
   landlordId: 1,
   displayName: 'Room 1',
-  pricings: [{ id: 1 }],
+  pricingIds: [{ id: 1 }],
   description: 'this is the example listing room 1',
-  availability: [{ id: 1 }, { id: 2 }],
-  bookings: [{ id: 1 }],
+  availabilityIds: [{ id: 1 }, { id: 2 }],
+  bookingIds: [{ id: 1 }],
 };
 
 export default property1;

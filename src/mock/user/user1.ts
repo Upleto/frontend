@@ -1,7 +1,7 @@
 import { UserProfile, Picture, Renter } from '../../redux/reducers/types';
 import account1 from '../account/account1';
 
-const profilePic1: Picture = {
+export const profilePic1: Picture = {
   id: 1,
   altInfo: 'user 1 profile pic',
 };
@@ -10,8 +10,8 @@ const profile1: UserProfile = {
   firstName: 'User',
   lastName: 'One',
   displayName: 'user1',
-  accounts: [account1],
-  profilePic: profilePic1,
+  accountIds: [account1],
+  profilePicId: profilePic1.id,
 };
 
 const user1: Renter = {

@@ -27,6 +27,7 @@
   "homepage": "https://github.com/Upleto/frontend#readme",
   "dependencies": {
     "@emotion/core": "^10.0.22",
+    "@emotion/styled": "^10.0.27",
     "decimal.js": "^10.2.0",
     "immer": "^5.0.1",
     "moment-timezone": "^0.5.27",
@@ -54,6 +55,7 @@
     "@types/node": "^12.12.16",
     "@types/react": "^16.9.16",
     "@types/react-redux": "^7.1.5",
+    "@types/react-table": "^7.0.3",
     "@typescript-eslint/eslint-plugin": "^2.11.0",
     "@typescript-eslint/parser": "^2.11.0",
     "babel-jest": "^24.9.0",

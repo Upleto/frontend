@@ -3,16 +3,18 @@ import produce from 'immer';
 /* eslint-disable no-param-reassign */
 import { ActionWithPayload } from '../../utils/redux/types';
 import ActionTypes from '../actions/actionTypes';
-import { PaymentTransaction } from './types';
+import { PaymentTransactionObjs, PaymentAccountForDisplayObjs } from './types';
 
 export interface State {
   redirectTo: string;
-  paymentHistory: PaymentTransaction[];
+  paymentHistory: PaymentTransactionObjs;
+  paymentAccountsInvolved: PaymentAccountForDisplayObjs;
 }
 
 export const initialState: Readonly<State> = {
   redirectTo: '',
-  paymentHistory: [],
+  paymentHistory: {},
+  paymentAccountsInvolved: {},
 };
 
 const reducer: Reducer<Readonly<State>, ActionWithPayload> = (state = initialState, action) => {
@@ -24,7 +26,12 @@ const reducer: Reducer<Readonly<State>, ActionWithPayload> = (state = initialSta
     }
     case ActionTypes.UPDATE_PAYMENT_HISTORY: {
       return produce(state, draftState => {
-        draftState.paymentHistory = action.payload as PaymentTransaction[];
+        draftState.paymentHistory = action.payload as PaymentTransactionObjs;
+      });
+    }
+    case ActionTypes.UPDATE_PAYMENT_ACCOUNTS_INVOLVED: {
+      return produce(state, draftState => {
+        draftState.paymentAccountsInvolved = action.payload as PaymentAccountForDisplayObjs;
       });
     }
     default: {

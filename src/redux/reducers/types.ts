@@ -12,8 +12,8 @@ export interface UserProfile {
   lastName: string;
   displayName: string;
   bio?: string;
-  accounts: PaymentAccounts;
-  profilePic?: Picture;
+  accountIds: PaymentAccountIds;
+  profilePicId?: Picture['id'];
 }
 
 export interface Picture {
@@ -27,12 +27,12 @@ export interface Property {
   displayName: string;
   id: number;
   description?: string;
-  pricings: PropertyPricings;
-  availability: availabilities;
-  bookings: Bookings;
+  pricingIds: PropertyPricingIds;
+  availabilityIds: AvailabilityIds;
+  bookingIds: BookingIds;
 }
 
-export type Properties = { id: Property['id'] }[];
+export type PropertyIds = { id: Property['id'] }[];
 
 export interface PropertyPricing {
   id: number;
@@ -41,7 +41,7 @@ export interface PropertyPricing {
   period: Period;
 }
 
-export type PropertyPricings = { id: PropertyPricing['id'] }[];
+export type PropertyPricingIds = { id: PropertyPricing['id'] }[];
 
 export interface Period {
   fromTime: Moment;
@@ -54,28 +54,40 @@ export interface Availability {
   available: boolean;
 }
 
-export type availabilities = { id: Availability['id'] }[];
+export type AvailabilityIds = { id: Availability['id'] }[];
 
 export interface PaymentAccount {
   id: number;
   ownerId: number;
   balance?: Decimal;
-  relatedBookings?: Bookings;
+  relatedBookingIds?: BookingIds;
 }
 
-export type PaymentAccounts = { id: PaymentAccount['id'] }[];
+export type PaymentAccountIds = { id: PaymentAccount['id'] }[];
+
+export interface PaymentAccountForDisplay extends Pick<PaymentAccount, 'id' | 'ownerId'> {
+  displayName: string;
+}
+
+export interface PaymentAccountForDisplayObjs {
+  [key: number]: PaymentAccountForDisplay;
+}
 
 export interface PaymentTransaction {
   id: number;
   amount: Decimal;
   toPaymentAccountId: PaymentAccount['id'];
   fromPaymentAccountId: PaymentAccount['id'];
-  time: Moment;
+  timeStamp: Moment;
   description?: string;
   relatedPropertyId?: Property['id'];
 }
 
-export type PaymentTransactions = { id: PaymentTransaction['id'] }[];
+export interface PaymentTransactionObjs {
+  [key: number]: PaymentTransaction;
+}
+
+export type PaymentTransactionIds = { id: PaymentTransaction['id'] }[];
 
 export interface Booking {
   id: number;
@@ -83,10 +95,10 @@ export interface Booking {
   propertyId: Property['id'];
   renterId: Renter['id'];
   landlordId: Landlord['id'];
-  agreements: Agreements;
+  agreementIds: AgreementIds;
 }
 
-export type Bookings = { id: Booking['id'] }[];
+export type BookingIds = { id: Booking['id'] }[];
 
 export interface Agreement {
   id: number;
@@ -97,14 +109,14 @@ export interface Agreement {
   docLink: string;
 }
 
-export type Agreements = { id: Agreement['id'] }[];
+export type AgreementIds = { id: Agreement['id'] }[];
 
 export interface Renter extends User {
-  rental: Bookings;
-  paymentHistory: PaymentTransactions;
+  rental: BookingIds;
+  paymentHistory: PaymentTransactionIds;
 }
 
 export interface Landlord extends User {
-  ownedProperties: Properties;
-  paymentHistory: PaymentTransactions;
+  ownedPropertyIds: PropertyIds;
+  paymentHistory: PaymentTransactionIds;
 }

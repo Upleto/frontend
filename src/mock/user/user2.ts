@@ -9,15 +9,15 @@ const profile2: UserProfile = {
   firstName: 'User',
   lastName: 'Two',
   displayName: 'user2',
-  accounts: [{ id: 2 }],
-  profilePic: profilePic2,
+  accountIds: [{ id: 2 }],
+  profilePicId: profilePic2.id,
 };
 
 const user2: Landlord = {
   id: 1,
   account: 'user2@gmail.com',
   profile: profile2,
-  ownedProperties: [{ id: 1 }],
+  ownedPropertyIds: [{ id: 1 }],
   paymentHistory: [{ id: 1 }, { id: 2 }, { id: 3 }, { id: 4 }],
 };
 
