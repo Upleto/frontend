@@ -1,39 +1,39 @@
 self.__precacheManifest = [
   {
-    "url": "/frontend/_next/static/OgU7kUTHy0sZHERb2uQzP/pages/_app.js",
-    "revision": "30107bff442858e4522b"
+    "url": "/frontend/_next/static/ZXuTDrqVTpfdPAPUGseLr/pages/_app.js",
+    "revision": "9b452e02b3ef579e3e07"
   },
   {
-    "url": "/frontend/_next/static/OgU7kUTHy0sZHERb2uQzP/pages/_error.js",
-    "revision": "9abb5239e92781956e37"
+    "url": "/frontend/_next/static/ZXuTDrqVTpfdPAPUGseLr/pages/_error.js",
+    "revision": "16f9c7646009bb347a06"
   },
   {
-    "url": "/frontend/_next/static/OgU7kUTHy0sZHERb2uQzP/pages/index.js",
-    "revision": "12dbdd3b6b6817fdc458"
+    "url": "/frontend/_next/static/ZXuTDrqVTpfdPAPUGseLr/pages/index.js",
+    "revision": "0fbabf31cbcd449253d4"
   },
   {
-    "url": "/frontend/_next/static/OgU7kUTHy0sZHERb2uQzP/pages/lease-agreement.js",
-    "revision": "66947452f6803b7ae920"
+    "url": "/frontend/_next/static/ZXuTDrqVTpfdPAPUGseLr/pages/lease-agreement.js",
+    "revision": "58149af5a01ab6cd5c6a"
   },
   {
-    "url": "/frontend/_next/static/OgU7kUTHy0sZHERb2uQzP/pages/login-register.js",
-    "revision": "e3941f3bc78ff94dc692"
+    "url": "/frontend/_next/static/ZXuTDrqVTpfdPAPUGseLr/pages/login-register.js",
+    "revision": "ea610910f212acb884ac"
   },
   {
-    "url": "/frontend/_next/static/OgU7kUTHy0sZHERb2uQzP/pages/page1.js",
-    "revision": "ea3108a4fb61deec7eae"
+    "url": "/frontend/_next/static/ZXuTDrqVTpfdPAPUGseLr/pages/page1.js",
+    "revision": "a637c7ff9b7efc35f0c3"
   },
   {
-    "url": "/frontend/_next/static/OgU7kUTHy0sZHERb2uQzP/pages/page2.js",
-    "revision": "2cab794c58caa3e78f8b"
+    "url": "/frontend/_next/static/ZXuTDrqVTpfdPAPUGseLr/pages/page2.js",
+    "revision": "df5a06c0c4328a9789f0"
   },
   {
-    "url": "/frontend/_next/static/OgU7kUTHy0sZHERb2uQzP/pages/payment.js",
-    "revision": "891039b95b928472923d"
+    "url": "/frontend/_next/static/ZXuTDrqVTpfdPAPUGseLr/pages/payment.js",
+    "revision": "df8a795a17bdcdee6a64"
   },
   {
-    "url": "/frontend/_next/static/OgU7kUTHy0sZHERb2uQzP/pages/renter.js",
-    "revision": "ca4ad6d1fb962648c8c3"
+    "url": "/frontend/_next/static/ZXuTDrqVTpfdPAPUGseLr/pages/renter.js",
+    "revision": "8a90c101dacab253c4b2"
   },
   {
     "url": "/frontend/_next/static/chunks/commons.b1b767909e82d23759f3.js",
