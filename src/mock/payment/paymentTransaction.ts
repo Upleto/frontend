@@ -28,7 +28,7 @@ paymentTransactions[3] = {
   amount: new Decimal(2000),
   toPaymentAccountId: 2,
   fromPaymentAccountId: 1,
-  timeStamp: moment.tz('2009-6-18 12:00', 'America/Los_Angeles'),
+  timeStamp: moment.tz('2009-06-18 12:00', 'America/Los_Angeles'),
   relatedPropertyId: 1,
 };
 
