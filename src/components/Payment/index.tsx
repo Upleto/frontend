@@ -1,6 +1,6 @@
 import React, { FC, useMemo } from 'react';
 import { connect } from 'react-redux';
-import { useTable, useSortBy, usePagination, HeaderGroup } from 'react-table';
+import { useTable, useSortBy, usePagination, HeaderGroup, Row, Cell } from 'react-table';
 import { css } from '@emotion/core';
 import { RenterPlusLoginState } from '../../redux/reducers/reducerCombo';
 import { ConnectedProps } from '../../utils/redux/types';
@@ -38,27 +38,47 @@ const Payment: FC<Props> = ({ redirectTo, paymentHistory, paymentAccountsInvolve
             Header: 'Time Stamp',
             accessor: (row: PaymentTransaction) => row.timeStamp.calendar(),
             id: 'date',
+            sortType: (rowA: Row<PaymentTransaction>, rowB: Row<PaymentTransaction>) => {
+              if (rowA.original.timeStamp.isAfter(rowB.original.timeStamp)) {
+                return 1;
+              }
+              if (rowA.original.timeStamp.isBefore(rowB.original.timeStamp)) {
+                return -1;
+              }
+              return 0;
+            },
           },
           {
             Header: 'Amount',
             accessor: (row: PaymentTransaction) => `$${row.amount.toFixed(2)}`,
             id: 'amount',
+            sortType: (rowA: Row<PaymentTransaction>, rowB: Row<PaymentTransaction>) => {
+              if (rowA.original.amount.gt(rowB.original.amount)) {
+                return 1;
+              }
+              if (rowA.original.amount.lt(rowB.original.amount)) {
+                return -1;
+              }
+            },
           },
           {
             Header: 'From',
             accessor: (row: PaymentTransaction) =>
               paymentAccountsInvolved[row.fromPaymentAccountId].displayName,
             id: 'fromAccountName',
+            disableSortBy: true,
           },
           {
             Header: 'To',
             accessor: (row: PaymentTransaction) =>
               paymentAccountsInvolved[row.toPaymentAccountId].displayName,
             id: 'toAccountName',
+            disableSortBy: true,
           },
           {
             Header: 'Description',
             accessor: 'description',
+            disableSortBy: true,
           },
         ],
       },
@@ -84,8 +104,13 @@ const Payment: FC<Props> = ({ redirectTo, paymentHistory, paymentAccountsInvolve
     setPageSize,
     state: { pageIndex, pageSize },
   } = useTable<PaymentTransaction>(
-    // @ts-ignore
-    { columns, data, initialState: { pageIndex: 0, pageSize: 2 } },
+    {
+      columns,
+      data,
+      // @ts-ignore
+      initialState: { pageIndex: 0, pageSize: 2, sortBy: [{ id: 'date', desc: false }] },
+      disableSortRemove: true,
+    },
     useSortBy,
     usePagination
   );
@@ -109,11 +134,11 @@ const Payment: FC<Props> = ({ redirectTo, paymentHistory, paymentAccountsInvolve
               ))}
             </thead>
             <tbody {...getTableBodyProps()}>
-              {page.map((row: any) => {
+              {page.map((row: Row<PaymentTransaction>) => {
                 prepareRow(row);
                 return (
                   <tr {...row.getRowProps()}>
-                    {row.cells.map((cell: any) => {
+                    {row.cells.map((cell: Cell<PaymentTransaction>) => {
                       return <td {...cell.getCellProps()}>{cell.value}</td>;
                     })}
                   </tr>
