@@ -2,7 +2,7 @@ import { Reducer } from 'redux';
 import produce from 'immer';
 /* eslint-disable no-param-reassign */
 import { ActionWithPayload } from '../../utils/redux/types';
-import ActionTypes from '../actions/actionTypes';
+import ActionTypes from '../actions/ActionTypes';
 
 export interface State {
   username: string;

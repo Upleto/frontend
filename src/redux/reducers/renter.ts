@@ -1,6 +1,6 @@
 import { Reducer } from 'redux';
 import { ActionWithPayload } from '../../utils/redux/types';
-import ActionTypes from '../actions/actionTypes';
+import ActionTypes from '../actions/ActionTypes';
 import { Renter } from './types';
 
 export type State = Renter | null;

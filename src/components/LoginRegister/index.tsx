@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 import Link from '../Link';
 import { RenterPlusLoginState } from '../../redux/reducers/reducerCombo';
 import actionCreator from '../../utils/redux/actionCreator';
-import ActionTypes from '../../redux/actions/actionTypes';
+import ActionTypes from '../../redux/actions/ActionTypes';
 import { ConnectedProps } from '../../utils/redux/types';
 import user1 from '../../mock/user/user1';
 import paymentTransactions from '../../mock/payment/paymentTransaction';

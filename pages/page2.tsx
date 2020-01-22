@@ -8,7 +8,7 @@ import dynamicStoreCallbackWrap from '../src/utils/redux/dynamicStoreCallbackWra
 import { Store } from '../src/redux/store';
 import Link from '../src/components/Link';
 import b, { State } from '../src/redux/reducers/b';
-import ActionTypes from '../src/redux/actions/actionTypes';
+import ActionTypes from '../src/redux/actions/ActionTypes';
 import { ActionWithPayload } from '../src/utils/redux/types';
 
 const { publicRuntimeConfig } = getConfig();

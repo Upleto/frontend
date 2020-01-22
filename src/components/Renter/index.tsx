@@ -4,7 +4,7 @@ import { Dispatch } from 'redux';
 import { connect } from 'react-redux';
 import Link from '../Link';
 import actionCreator from '../../utils/redux/actionCreator';
-import ActionTypes from '../../redux/actions/actionTypes';
+import ActionTypes from '../../redux/actions/ActionTypes';
 import { ConnectedProps } from '../../utils/redux/types';
 
 const RenterStyle = css`
