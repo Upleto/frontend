@@ -57,7 +57,7 @@ const configureStore = <A extends Action = AnyAction>({
       updatedState = objectAssign(([k]) => !keysToRemove.includes(k))({}, state);
       keysToRemove = [];
     }
-    return combineReducers({
+    return combineReducers<any, A>({
       ...commonReducers,
       ...asyncReducers,
     })(updatedState, action);
