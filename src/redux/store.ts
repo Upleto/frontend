@@ -3,6 +3,7 @@ import getConfig from 'next/config';
 import configureStore, { ReducerEnhancedStore } from '../utils/redux/configureStore';
 import { ActionWithPayload } from '../utils/redux/types';
 import commonReducers from './reducers';
+import rootSaga from './sagas/rootSaga';
 
 export type Store = ReducerEnhancedStore<ActionWithPayload>;
 
@@ -18,6 +19,6 @@ const enhancer = (...middlewareArray: Middleware[]) => {
   return composeWithDevTools(applyMiddleware(...middlewareArray));
 };
 
-const initStore = configureStore({ commonReducers, enhancer });
+const initStore = configureStore({ commonReducers, enhancer, rootSaga });
 
 export default initStore;
