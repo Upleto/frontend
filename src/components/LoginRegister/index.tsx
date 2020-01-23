@@ -7,6 +7,7 @@ import { RenterPlusLoginState } from '../../redux/reducers/reducerCombo';
 import actionCreator from '../../utils/redux/actionCreator';
 import ActionTypes from '../../redux/actions/ActionTypes';
 import { ConnectedProps } from '../../utils/redux/types';
+import rem from '../../utils/style/rem';
 // import user1 from '../../mock/user/user1';
 // import paymentTransactions from '../../mock/payment/paymentTransaction';
 // import account1 from '../../mock/account/account1';
@@ -17,6 +18,13 @@ const LoginRegisterPageStyle = css`
   display: flex;
   flex-flow: column;
   align-items: center;
+
+  & > input {
+    max-width: ${rem(300)};
+    width: 100%;
+    height: ${rem(30)};
+    margin-top: ${rem(10)};
+  }
 `;
 
 const mapStateToProps = (state: RenterPlusLoginState) => ({
